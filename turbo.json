@@ -25,7 +25,12 @@
         },
         "lint": {
             "dependsOn": [
-                "^build"
+                "^lint"
+            ]
+        },
+        "inspect": {
+            "dependsOn": [
+                "^inspect"
             ]
         },
         "typecheck": {
@@ -42,6 +47,21 @@
         },
         "clean": {
             "cache": false
+        },
+        "transit": {
+            "dependsOn": [
+                "^transit"
+            ]
+        },
+        "check-types": {
+            "dependsOn": [
+                "transit"
+            ]
+        },
+        "check": {
+            "dependsOn": [
+                "transit"
+            ]
         }
     }
 }

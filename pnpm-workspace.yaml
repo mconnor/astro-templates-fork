@@ -1,4 +1,4 @@
 packages:
-  - "templates/*"
-  - "packages/**"
-  - "!**/.vercel/**"
+  - 'templates/*'
+  - 'packages/*'
+  - '!**/.vercel/**'
